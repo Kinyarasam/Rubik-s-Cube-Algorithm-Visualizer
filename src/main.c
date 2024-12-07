@@ -6,6 +6,6 @@
  * Returns: always 0.
  *  otherwise 1;
  */
-void main() {
+int main(void) {
     return 0;
 }
