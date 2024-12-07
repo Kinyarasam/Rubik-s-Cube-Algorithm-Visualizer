@@ -16,10 +16,9 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Link OpenGL and GLUT libraries
 find_package(OpenGL REQUIRED)
-find_package(GLUT REQUIRED)
 find_package(GLEW REQUIRED)
 
-target_link_libraries(${PROJECT_NAME} OpenGL::GL GLUT GLEW)
+target_link_libraries(${PROJECT_NAME} OpenGL::GL GLEW)
 
 # Add compiler flags
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -Wextra -pedantic")
